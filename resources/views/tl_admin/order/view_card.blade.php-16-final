@@ -1,0 +1,164 @@
+@extends('tl_admin.layouts.frontlayouts')
+
+@section('content')
+<?php
+    $segment = Request::segment(2); // echo $data[0]->template_id; exit;
+    $arr_voucher = explode("_",$storeid[0]->tl_cart_voucher); 
+    if($data[0]->template_id==1)
+     {
+        $change_bg_css = "background: #fff;";
+        $change_border_css = "border: 3px solid #000;";
+     }
+     else if($data[0]->template_id==2)
+     {
+        $change_bg_css = "background: #fff;";
+        $change_border_css = "border: none;";
+     }   
+     elseif ($data[0]->template_id==3) {
+        $change_bg_css = "background-image:url(/public/frontend/img/texture.png);";
+        $change_border_css = "border:none;";
+     }     
+    ?>
+
+<section class="test">
+ <a type="button" href="javascript:void(0)" id="basic" class="go-backbtn hvr-sweep-to-right">print</a>
+
+
+<div class="container demo">
+
+    <style>
+.page-break {
+    page-break-after: always;
+}
+</style>
+<div class="page1">
+<div class="template template_3" id="one" style ='{{$change_bg_css}}{{$change_border_css}}'>
+            <style type="text/css">
+.template .title {
+    font-size: 22px;
+    text-align: center;
+     margin-bottom: 0px; 
+}
+    .template.template_3 {
+    /*border: 3px solid #001041;*/
+    position: relative;
+}
+/*.foot-logo-blue {
+    background: url(http://treatlocally.karmatechprojects.com/public/tl_admin/dist/img/blue_new.png) no-repeat !important;
+    height: 150px;
+    width: 150px;
+    background-size: 80% !important;
+    margin: 0 0 0 40%;
+}*/
+.template-header{
+    min-height: 0px;
+    
+}
+
+
+</style>
+
+<?php 
+if($data[0]->template_id==1 || $data[0]->template_id==3)
+{
+    ?>
+    <style type="text/css">
+.template.template_3:before {
+    content: '';
+    width: 12px;
+    height: 100px;
+    background: none;
+    position: absolute;
+    -webkit-transform: rotate(39deg);
+    -ms-transform: rotate(39deg);
+    transform: rotate(39deg);
+    top: -16px;
+    left: 18px;
+}
+.template.template_3:after {
+    content: '';
+    width: 12px;
+    height: 100px;
+    background: none;
+    position: absolute;
+    -webkit-transform: rotate(39deg);
+    -ms-transform: rotate(39deg);
+    transform: rotate(39deg);
+    bottom: -15px;
+    right: 17px;
+}
+
+    </style>
+    <?php
+}
+
+?>
+            <div class="row">
+            <div class="template-header">   
+                <div class="title"></div>
+                <div class="subtitle" id="card2_reciepnt_name" style="font-size: 14px;"><?php echo ucfirst($data[0]->card_recipient_name); ?></div>
+
+                <div class="slogtitle" id="card2_occasion"><?php echo ucfirst($data[0]->card_occasion); ?></div>
+            </div>
+            <div class="template-container">
+                <div class="article" id="card2_message" style="font-size: 12px;">
+                    <?php echo $data[0]->card_message; ?>
+                </div>
+
+                    <div class="from">
+                        <div class="from-title"></div>
+                        <div class="from-name" id="card2_sender_name" style="font-size: 14px;"><?php echo ucfirst($data[0]->card_sender_name); ?></div>
+                    </div>
+                </div>   
+                <div class="foot-logo-blue1" style="text-align: center;">
+                    <img src="{{url('/')}}/public/tl_admin/dist/img/blue_new.png" width="150">
+                </div>
+            </div> 
+            </div>
+</div> <!-- end of page one div -->
+
+<div class="page-break"></div>
+<div class="page2">
+<div class="template template_3 vh_template_2" id="two" style ='{{$change_bg_css}}{{$change_border_css}}'>
+                    <div class="row" >
+                <div class="template-header">   
+                    <div class="title"></div>
+                    <div class="slogtitle" id="card1_occasion"><?php echo ucfirst($data[0]->card_sender_name); ?> <br> is treating you to <?php echo ucfirst($storeid[0]->tl_product_name); ?> from <br> <?php echo ucfirst($storeid[0]->store_name); ?></div>
+                </div>
+                <div class="template-container">
+                    <div class="article" id="card1_message" style="font-size: 12px;">
+                        <h3>ABOUT THE MERCHANT</h3>
+                      " <?php echo $string = $abt_merchant[0]->tl_addstore_treat_cardmsg; ?>"
+                    </div>
+
+                    <div class="treat-code-area">
+                        <div class="treat-code-number">{{$arr_voucher[1]}}</div>
+                         <?php if($pro_validity[0]->tl_product_validity!==null){ ?>
+                        <div class="treat-code-validity">Valid till  <?php echo date("Y-m-d", strtotime($pro_validity[0]->tl_product_validity)); ?></div>  
+                          <?php } ?> 
+                    </div>
+                    <div class="article" id="card1_message" style="font-size: 12px;">
+                        <h3>How to redeem your treat?</h3>
+                         <?php echo $pro_validity[0]->tl_product_redeem; ?>
+                        <!-- "Simply call  on  and make a reservation using this voucher number !" -->
+
+                    </div>
+                </div>
+                <div class="from">
+                    <div class="foot-logo-blue1" style="text-align: center;">
+                        <img src="{{url('/')}}/public/tl_admin/dist/img/blue_new.png" width="150">
+                </div>
+            </div>  
+            </div> 
+        </div>
+
+</div><!-- end of page two div -->
+
+</div>
+
+
+
+
+</section>
+
+@endsection

@@ -1,0 +1,679 @@
+html, body{
+	font-family: 'Work Sans', sans-serif !important;
+}
+
+
+.main-header .logo .logo-lg img{
+	margin:auto;
+}
+
+.small-box{
+	background: #fff;
+	color: #000;
+}
+
+.small-box>.small-box-footer:hover{
+	background: #01008b;
+}
+
+.small-box:hover{
+	color: #000;
+}
+
+.small-box>.small-box-footer{
+	background: #000;
+    font-size: 16px;
+    padding:8px 0;
+}
+
+.sidebar-menu li>a>.fa-angle-left, .sidebar-menu li>a>.pull-right-container>.fa-angle-left{
+	font-size: 20px;
+	line-height: 14px;
+	transform: rotate(-180deg);
+}
+
+.box{
+	border-top:none;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+}
+
+.box .box-body table tr th{
+	background: #222d32;
+	color: #fff;
+    padding: 13px 9px;
+    text-align: left;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.box .box-body table tr th:nth-child(01){
+    width: 7%;
+}
+.box .box-body table tr th:nth-child(02){
+    width: 15%;
+}
+.box .box-body table tr th:nth-child(03){
+    width: 15%;
+}
+.box .box-body table tr th:nth-child(04){
+    width: 15%;
+}
+.box .box-body table tr th:nth-child(05){
+    width: 15%;
+}
+
+.box .box-body table tr th:nth-child(06){
+    width: 15%;
+}
+
+.box .box-body table tr td{
+    padding: 12px 9px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+@media(max-width:991px){
+	.box .box-body{
+		overflow: auto;
+	}
+	.box .box-body table{
+		width: 960px;
+	}
+}
+
+.main-footer strong a{
+	color: #000;
+}
+
+.main-header .logo .logo-lg{
+	display: block !important;
+}
+
+.sidebar-mini .logo-lg .tl-admin-larglogo{
+	display: block;
+}
+
+.sidebar-mini.sidebar-collapse .logo-lg .tl-admin-larglogo{
+	display: none;
+}
+
+.sidebar-mini.sidebar-collapse .logo-lg .tl-admin-smalllogo{
+	display: block;
+}
+
+.sidebar-mini .logo-lg .tl-admin-smalllogo{
+	display: none;
+}
+
+.sidebar-mini.sidebar-collapse .main-header .logo{
+    padding: 10px 10px !important;
+}
+
+.tl-login .navbar.navbar-default{
+    display: none;
+}
+
+.tl-login{
+	background: url(../img/banner.jpg) no-repeat;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+}
+
+.tl-login:before{
+	content: '';
+	background: rgba(0,0,0,0.60);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+
+.tl-form .panel.panel-default{
+	background:#eef1f6;
+	padding:15px 40px;
+	width: 100%;
+	max-width:480px;
+	margin:auto;
+}
+
+.tl-form .panel.panel-default .panel-heading{
+    text-align: center;
+    margin: 15px 0 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight:700;
+    color: #000;
+}
+
+.tl-form{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100vh;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	z-index: 99;
+}
+
+.tl-form .panel.panel-default .panel-body .form-group label{
+	width: 100%;
+	font-weight: normal;
+	font-size: 16px;
+	margin-bottom:5px;
+}
+
+.tl-form .panel.panel-default .panel-body .form-group .control-label{
+	text-align: left !important;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000;
+	font-size: 14px;
+
+}
+
+.tl-form .panel.panel-default .panel-body .form-group label input{
+	font-weight: normal;
+	height: 43px;
+	border:none;
+	border-radius: 0;
+}
+
+.tl-form .panel.panel-default .panel-body .form-group label select{
+	font-weight: normal;
+	height: 43px;
+	border: 1px solid #ccc;
+	border-radius: 0;
+}
+
+.tl-form .panel.panel-default .panel-body .form-group{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.tl-form .panel.panel-default .panel-body .form-group .checkbox input{
+	height: 17px;
+}
+
+.tl-form .panel.panel-default .panel-body .form-group .checkbox{
+	padding:0;
+}
+
+.tl-form-submit{
+	background: #000;
+	width: 100%;
+	max-width: 100px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	padding:8px 0;
+	border: none;
+}
+
+.hvr-sweep-to-right{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #01008b;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active{
+    color: white !important;
+
+}
+
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.tl-form .panel.panel-default .panel-body .form-group .btn.btn-link{
+	width: 100%;
+	text-align: center;
+	clear: both;
+	color: #000;
+	margin:5px 0 0;
+}
+
+.tl-form .panel.panel-default .panel-body .form-group:last-child label{
+	text-align: center;
+}
+
+.tl-form .panel.panel-default label.tl-sendemail .tl-form-submit{
+	max-width:270px;
+    padding: 10px 20px;
+}
+
+.tl-form .panel.panel-default label.tl-sendemail{
+	text-align: center;
+	width: 100%;
+}
+
+.tl-form .tl-form-logo{
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+@media(max-width:767px){
+	.tl-form .panel.panel-default{
+		margin:0 15px;
+		padding:15px 15px;
+	}
+}
+
+.skin-blue .main-header .navbar{
+	background-color:#000 !important;  
+}
+
+.skin-blue .main-header .logo{
+	background-color:#000 !important;
+}
+
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu{
+	border:none;
+	padding:0;
+}
+
+.skin-blue .main-header li.user-header{
+	background-color:#01008b !important;
+}
+
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu .user-body .col-xs-4.text-center{
+	display: none;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>.user-body{
+	padding:0 !important;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default{
+    color: #fff !important;
+    background: #000;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default:hover{
+	background:#01008b;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.navbar-custom-menu>.navbar-nav>li:last-child{
+	display: none;
+}
+.skin-blue .sidebar-menu>li.active>a {
+    border-left-color: #000000 !important;
+}
+
+.content-wrapper.tl-admin-about{
+	margin-left: 0 !important;
+	overflow: hidden;
+}
+
+.content-wrapper.tl-admin-about .content{
+	background: #fff;
+	margin:15px;
+}
+
+.content-header>h1{
+	font-weight: 700;
+}
+
+.content-wrapper.tl-admin-about .content .tl-about-smallheading{
+	text-align: left;
+	margin: 15px 0;
+	font-size:18px;
+	font-weight: normal;
+}
+
+.content-wrapper.tl-admin-about .content .tl-fileupload{
+	margin:0 15px;
+	position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.content-wrapper.tl-admin-about .content .tl-fileupload input{
+	opacity: 0;
+	width: 100%;
+	max-width: 130px;
+	height: 40px;
+	position: relative;
+	z-index: 9;
+	cursor: pointer;
+}
+
+.content-wrapper.tl-admin-about .content .tl-fileupload span{
+    width: 100%;
+    max-width: 130px;
+    position: absolute;
+    top: 55px;
+    background: #000;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.content-wrapper.tl-admin-about .content .btn.btn-flat{
+	margin:0 12px;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover{
+	background-color:#000 !important;
+}
+
+.tl-upload-img{
+    width: 100%;
+    max-width: 510px;
+    float: left;
+    margin: 0 30px;
+    height: 180px;
+}
+
+.tl-upload-img img{
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.sidebar .user-panel{
+	display: none;
+}
+
+.sidebar form.sidebar-form{
+	display: none;
+}
+
+.skin-blue .sidebar-menu>li>a{
+	padding:15px;
+}
+
+.treeview-menu>li>a{
+	padding:10px 5px 10px 15px !important;
+}
+
+ul.sidebar-menu.tree li.header{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #afafaf;
+    background: #0f1619;
+    padding:0;
+}
+
+.wrapper{
+	overflow-y: hidden !important;
+}
+
+.sidebar-menu .treeview-menu>li i {
+    font-size:15px;
+    opacity: 0.8;
+    position: relative;
+    top: 1px;
+}
+
+.content-wrapper.tl-admin-about .content .box-header button{
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 12px;
+    border: none;
+}
+
+.content-wrapper.tl-admin-about .content .box-header{
+    margin-left: 15px;
+}
+
+.content-wrapper.tl-admin-about .content .box-header button:hover{
+	background: #01008b;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.content-wrapper.tl-admin-about .content .box-body table a{
+    color: #333;
+}
+
+.tl-addfaqcat .box.box-info{
+	padding:30px 0;
+}
+
+
+#statusbutton a{
+	width: 100%;
+	max-width: 120px;
+	color: #fff;
+}
+
+.box .box-body table tr td{
+	word-break:break-all;
+}
+
+.modal-backdrop.show{
+	display: none !important;
+}
+#myModal .modal-footer button{
+	background: #000;
+	border-radius: 0;
+	border:none;
+	color: #fff;
+}
+/*sk css*/
+.content-wrapper .adminManageHomeTitle{
+    padding: 15px;
+}
+.content-wrapper .adminManageHomeTitle h3{
+	margin:0;
+	font-weight: 700;
+}
+.content-wrapper .tl-adminManageHome{
+    margin: 15px;
+    background: #fff;
+    margin-top: 0px;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner{
+	padding: 15px;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner form .tl-fileupload{
+    margin: 0 15px;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner form .tl-fileupload label{
+	margin-top: 25px;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner form .tl-fileupload input{
+    opacity: 0;
+    width: 100%;
+    max-width: 130px;
+    height: 40px;
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+    margin-top: 16px;
+    text-indent: -9999px;	
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner form .tl-fileupload span.hvr-sweep-to-right{
+	width: 100%;
+    max-width: 130px;
+    position: absolute;
+    top: 0px;
+    background: #000;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 65px;
+    left:0;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner form .tl-upload-img{
+    width: 100%;
+    max-width: 510px;
+    float: left;
+    margin: 0 30px;
+    height: 180px;
+}
+.titleFlex{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+    align-items: center;
+    margin: 25px 0px;
+}
+.titleFlex > div {
+    margin-right: 12px;
+    margin-top: 15px;
+}
+.titleFlex div .updateBtn{
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 34px;
+    text-align: center;
+    border: none;
+    padding: 0px 20px;
+    position: relative;
+    top: -3px;
+}
+.titleFlex input{
+	font-weight: 500
+}
+.titleFlex .inputField{
+    width: 26%;
+}
+.titleFlex .inputField label{
+	width: 100%;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks h3{
+	font-weight: 600;
+    margin-bottom: 30px;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks form{
+	border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks label.form-title-text{
+	float: left;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .tl-fileupload{
+    margin: 0 15px;
+    position: relative;
+    display: inline-block;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .tl-fileupload input{
+	opacity: 0;
+    width: 100%;
+    max-width: 130px;
+    height: 40px;
+    position: absolute;
+    z-index: 9;
+    cursor: pointer;
+    margin-top: 65px;
+    text-indent: -9999px;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .tl-fileupload label span{
+	width: 100%;
+    max-width: 130px;
+    position: absolute;
+    top: 0px;
+    background: #000;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 0px;
+    left:0;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .tlManageIcon img{
+	width: 50px;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .form-title-text.txt1,
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .form-title-text.txt2,
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .form-title-text.txt3{
+	margin-top: -25px;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .form-title-text.txt4{
+	float: none;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .form-title-text.txt5{
+	float: none;
+	display: block;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .txtEditor{
+	margin-top: 40px;
+}
+.content-wrapper .tl-adminManageHome .adminManageHomeInner .tlManageWorks .updateBTn input{
+    width: 100%;
+    max-width: 130px;
+    background: #000;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 40px;
+    text-align: center;
+    border: none;
+    margin-top: 25px;
+}
+.tl-fileuploadLogo{
+    position: relative;
+}
